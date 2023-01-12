@@ -26,9 +26,8 @@
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 
-    $sql = "SELECT * FROM Guestbook;";
+    $sql = "SELECT * FROM guestbook1;";
     $result = $conn->query($sql);
-
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
             echo "<hr>";
